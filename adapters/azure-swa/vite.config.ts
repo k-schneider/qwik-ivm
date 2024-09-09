@@ -17,6 +17,7 @@ export default extendConfig(baseConfig, () => {
     },
     ssr: {
       noExternal: /.*/,
+      external: ['isolated-vm'],
     },
     plugins: [azureSwaAdapter()],
   };
